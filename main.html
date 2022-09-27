@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marchel - Space</title>
+
+    <!-- Style CSS -->
+    <link rel="icon" href="images/moon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-responsive.css">
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <img src="images/profile.png">
+        <a href="#hero" class="logo">Marchel</a>
+        <ul class="icon-nav">
+            <a class="text-decoration-none" href="https://www.linkedin.com/in/marchelinobojoh/">
+              <svg width="40" height="40" viewBox="0 0 50 50" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentcolor" fill-rule="evenodd" clip-rule="evenodd" d="M2.08334 5.91248C2.08334 4.89693 2.48677 3.92296 3.20488 3.20485C3.92299 2.48675 4.89695 2.08332 5.91251 2.08332H44.0833C44.5866 2.0825 45.0851 2.18095 45.5503 2.37304C46.0155 2.56513 46.4382 2.84709 46.7943 3.20277C47.1503 3.55845 47.4328 3.98087 47.6254 4.44584C47.818 4.91081 47.9169 5.4092 47.9167 5.91248V44.0833C47.9172 44.5867 47.8185 45.0852 47.6262 45.5504C47.4339 46.0156 47.1517 46.4383 46.7959 46.7944C46.44 47.1504 46.0175 47.4328 45.5524 47.6254C45.0873 47.8179 44.5888 47.9169 44.0854 47.9166H5.91251C5.40948 47.9166 4.91138 47.8175 4.44667 47.625C3.98196 47.4324 3.55974 47.1502 3.20414 46.7944C2.84855 46.4386 2.56654 46.0162 2.37422 45.5514C2.18191 45.0866 2.08307 44.5884 2.08334 44.0854V5.91248ZM20.225 19.5583H26.4313V22.675C27.3271 20.8833 29.6188 19.2708 33.0625 19.2708C39.6646 19.2708 41.2292 22.8396 41.2292 29.3875V41.5166H34.5479V30.8792C34.5479 27.15 33.6521 25.0458 31.3771 25.0458C28.2208 25.0458 26.9083 27.3146 26.9083 30.8792V41.5166H20.225V19.5583ZM8.76668 41.2312H15.45V19.2708H8.76668V41.2292V41.2312ZM16.4063 12.1083C16.4189 12.6806 16.317 13.2495 16.1068 13.7819C15.8965 14.3142 15.582 14.7992 15.1817 15.2084C14.7815 15.6175 14.3035 15.9426 13.776 16.1646C13.2484 16.3865 12.6818 16.5009 12.1094 16.5009C11.537 16.5009 10.9704 16.3865 10.4428 16.1646C9.91522 15.9426 9.43728 15.6175 9.03703 15.2084C8.63678 14.7992 8.32229 14.3142 8.11201 13.7819C7.90173 13.2495 7.79991 12.6806 7.81251 12.1083C7.83724 10.9851 8.30081 9.91622 9.10394 9.13058C9.90706 8.34495 10.9859 7.90502 12.1094 7.90502C13.2329 7.90502 14.3117 8.34495 15.1148 9.13058C15.918 9.91622 16.3815 10.9851 16.4063 12.1083V12.1083Z" fill="black"/>
+              </svg>
+              </a>
+            <!-- <a class="text-decoration-none" href="#">
+              <svg width="40" height="40" viewBox="0 0 50 50" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_12_2)">
+              <path fill="currentcolor" fill-rule="evenodd" clip-rule="evenodd" d="M25 0C11.1979 0 0 11.1979 0 25C0 38.8021 11.1979 50 25 50C38.775 50 50 38.8021 50 25C50 11.1979 38.775 0 25 0ZM41.5125 11.5229C44.5906 15.2715 46.2939 19.9602 46.3396 24.8104C45.6354 24.675 38.5854 23.2375 31.4812 24.1333C31.3167 23.7792 31.1812 23.4 31.0187 23.0208C30.5769 21.9779 30.1073 20.947 29.6104 19.9292C37.4729 16.7292 41.0521 12.1208 41.5125 11.5229V11.5229ZM25 3.68958C30.4229 3.68958 35.3854 5.72083 39.1542 9.05625C38.775 9.59792 35.5479 13.9104 27.9562 16.7562C24.4562 10.3312 20.5812 5.06875 19.9833 4.25625C21.6278 3.87227 23.3114 3.68139 25 3.6875V3.68958ZM15.9167 5.69375C16.4854 6.45417 20.2812 11.7417 23.8333 18.0312C13.8542 20.6896 5.04167 20.6354 4.09375 20.6354C5.47708 14.0187 9.95208 8.51458 15.9167 5.69375ZM3.63333 25.0271V24.3771C4.55625 24.4042 14.9125 24.5396 25.5708 21.3396C26.1937 22.5333 26.7625 23.7521 27.3042 24.9729C27.0333 25.0542 26.7354 25.1354 26.4646 25.2167C15.4562 28.7687 9.59792 38.475 9.11042 39.2896C5.58419 35.3761 3.63292 30.2949 3.63333 25.0271V25.0271ZM25 46.3667C20.2542 46.3742 15.643 44.7897 11.9042 41.8667C12.2833 41.0792 16.6208 32.7271 28.6604 28.525C28.7146 28.4979 28.7437 28.4979 28.7958 28.4708C31.8062 36.2521 33.025 42.7875 33.3521 44.6583C30.775 45.7708 27.9562 46.3667 25 46.3667ZM36.9042 42.7062C36.6875 41.4042 35.5479 35.1687 32.7542 27.4937C39.4521 26.4375 45.3083 28.1729 46.0417 28.4167C45.1187 34.3542 41.7021 39.4792 36.9042 42.7062Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_12_2">
+              <rect width="50" height="50" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              </a> -->
+              <a class="text-decoration-none" href="mailto:marchelinobojoh@gmail.com">
+                <svg width="40" height="40" viewBox="0 0 50 50" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_12_6)">
+                  <path fill="currentcolor" d="M50 11.3688V40.3459C50 42.2292 48.475 43.7542 46.5917 43.7542H38.6354V24.4375L25 34.6667L11.3646 24.4375V43.7563H3.40833C2.96057 43.7563 2.51719 43.668 2.10354 43.4966C1.68989 43.3252 1.31406 43.074 0.997541 42.7573C0.681021 42.4405 0.430009 42.0646 0.258846 41.6508C0.0876841 41.237 -0.000273058 40.7936 6.36774e-07 40.3459V11.3688C6.36774e-07 7.15419 4.81042 4.74794 8.18125 7.27711L11.3646 9.66669L25 19.8917L38.6354 9.66252L41.8187 7.27711C45.1875 4.75002 50 7.15419 50 11.3688Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_12_6">
+                  <rect width="50" height="50" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>            
+                </a>
+              </ul>
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+          <ul class="link-nav">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#get-touch">Contact</a></li>
+          </ul>
+    </header>
+    <!-- End Navigation -->
+
+    <!-- Hero -->
+    <div class="hero section" id="hero">
+        <div class="container-section">
+            <div class="content">
+                 <h1>I'm<span class="typed-text"></span><span class="cursor typing">&nbsp;</span></h1>
+            </div>
+            <div class="moon">
+                <img class="moon-effect" src="images/moon.png">
+            </div>
+            <div class="meteor-cont">
+                <div class="meteor-ani-1">
+                    <div id="meteor"></div>
+                </div>
+                <div class="meteor-ani-2">
+                    <div id="meteor"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero -->
+
+
+    <!-- Project 1 -->
+    <div class="project-1 section" id="project">
+        <div class="container-section">
+            <div class="content-text">
+                <h3>Project <span style="color: #F65354; font-size: 2em; margin-left: 10px;">#1</span></h3>
+                <br>
+                <br>
+                <h1> <span style="color: #fff;">FOOD</span><br>DELIVERY</h1>
+                <br>
+                <p>Food Delivery service application based on a mobile application</p>
+                <br>
+                <br>
+                <a href="https://www.figma.com/file/NC4P41v22xWwNUZRg5Toc5/Food-Delivery?node-id=519%3A1875">View Case</a>
+            </div>
+                <img class="fd-img" src="images/fooddelivery.png">
+        </div>
+    </div>
+    <!-- End Project 1 -->
+
+
+    <!-- About Me -->
+    <div class="about section" id="about">
+        <div class="container-section">
+            <div class="mean">
+                <p><span class="thinktext"></span><span class="thinkcursor typing1">&nbsp;</span></p>
+                <img src="images/mean.png" alt="">
+            </div>
+            <img class="astronot-effect1" src="images/astronot.png">
+            <div class="text">
+                <h1>Hi there, I'm Marchel</h1>
+                <br>
+                <p>(Example) My name is Marchelino Bojoh and I am from 
+                    Indonesia. I am a Junior UI/UX Designer 
+                    and Project Management.
+                    <br>
+                    <br>
+                    Currently, I'm making UI designs like mobile, 
+                    website, and dashboard. In my free time, 
+                    I'm still a student I never stop learning, 
+                    and also I playing games and read books to 
+                    upgrade my skills. </p>
+                <br>
+                <br>
+                <h3>Reach me :</h3>
+                <br>
+                <ul class="reach-icon">
+                    <a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=62895397164967&text=">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="currentcolor"  xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentcolor"  d="M42.0002 14.2499C36.0002 4.99994 23.7502 2.24994 14.2502 7.99994C5.00018 13.7499 2.00018 26.2499 8.00018 35.4999L8.50018 36.2499L6.50018 43.7499L14.0002 41.7499L14.7502 42.2499C18.0002 43.9999 21.5002 44.9999 25.0002 44.9999C28.7502 44.9999 32.5002 43.9999 35.7502 41.9999C45.0002 35.9999 47.7502 23.7499 42.0002 14.2499V14.2499ZM36.7502 33.4999C35.7502 34.9999 34.5002 35.9999 32.7502 36.2499C31.7502 36.2499 30.5002 36.7499 25.5002 34.7499C21.2502 32.7499 17.7502 29.4999 15.2502 25.7499C13.7502 23.9999 13.0002 21.7499 12.7502 19.4999C12.7502 17.4999 13.5002 15.7499 14.7502 14.4999C15.2502 13.9999 15.7502 13.7499 16.2502 13.7499H17.5002C18.0002 13.7499 18.5002 13.7499 18.7502 14.7499C19.2502 15.9999 20.5002 18.9999 20.5002 19.2499C20.7502 19.4999 20.7502 19.9999 20.5002 20.2499C20.7502 20.7499 20.5002 21.2499 20.2502 21.4999C20.0002 21.7499 19.7502 22.2499 19.5002 22.4999C19.0002 22.7499 18.7502 23.2499 19.0002 23.7499C20.0002 25.2499 21.2502 26.7499 22.5002 27.9999C24.0002 29.2499 25.5002 30.2499 27.2502 30.9999C27.7502 31.2499 28.2502 31.2499 28.5002 30.7499C28.7502 30.2499 30.0002 28.9999 30.5002 28.4999C31.0002 27.9999 31.2502 27.9999 31.7502 28.2499L35.7502 30.2499C36.2502 30.4999 36.7502 30.7499 37.0002 30.9999C37.2502 31.7499 37.2502 32.7499 36.7502 33.4999V33.4999Z" fill="black"/>
+                        </svg>  
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com/marchelboyoh_/">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="currentcolor"  xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentcolor"  d="M25.0005 18.4912C21.4165 18.4912 18.4917 21.416 18.4917 25C18.4917 28.584 21.4165 31.5088 25.0005 31.5088C28.5845 31.5088 31.5093 28.584 31.5093 25C31.5093 21.416 28.5845 18.4912 25.0005 18.4912ZM44.522 25C44.522 22.3047 44.5464 19.6338 44.395 16.9433C44.2436 13.8183 43.5308 11.0449 41.2456 8.75975C38.9556 6.46971 36.187 5.76171 33.062 5.61034C30.3667 5.45897 27.6958 5.48339 25.0054 5.48339C22.31 5.48339 19.6391 5.45897 16.9487 5.61034C13.8237 5.76171 11.0503 6.4746 8.76512 8.75975C6.47509 11.0498 5.76708 13.8183 5.61571 16.9433C5.46434 19.6387 5.48876 22.3096 5.48876 25C5.48876 27.6904 5.46434 30.3662 5.61571 33.0566C5.76708 36.1816 6.47997 38.9551 8.76512 41.2402C11.0552 43.5303 13.8237 44.2383 16.9487 44.3896C19.644 44.541 22.3149 44.5166 25.0054 44.5166C27.7007 44.5166 30.3716 44.541 33.062 44.3896C36.187 44.2383 38.9604 43.5254 41.2456 41.2402C43.5356 38.9502 44.2436 36.1816 44.395 33.0566C44.5513 30.3662 44.522 27.6953 44.522 25V25ZM25.0005 35.0146C19.4585 35.0146 14.9858 30.542 14.9858 25C14.9858 19.458 19.4585 14.9853 25.0005 14.9853C30.5425 14.9853 35.0151 19.458 35.0151 25C35.0151 30.542 30.5425 35.0146 25.0005 35.0146ZM35.4253 16.914C34.1313 16.914 33.0864 15.8691 33.0864 14.5752C33.0864 13.2812 34.1313 12.2363 35.4253 12.2363C36.7192 12.2363 37.7641 13.2812 37.7641 14.5752C37.7645 14.8824 37.7043 15.1867 37.5869 15.4707C37.4695 15.7546 37.2972 16.0126 37.08 16.2299C36.8627 16.4471 36.6047 16.6194 36.3208 16.7368C36.0368 16.8542 35.7325 16.9144 35.4253 16.914V16.914Z" fill="black"/>
+                            </svg> 
+                    </a>
+                    <a class="text-decoration-none" href="https://www.linkedin.com/in/marchelinobojoh/">
+                        <svg width="45" height="45" viewBox="0 -5 50 50" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_290_34)">
+                            <path fill="currentcolor" d="M8.82325 0.0112305C3.97599 0.0112305 0.00878906 3.97834 0.00878906 8.8257V36.1785C0.00878906 41.0258 3.9759 44.9916 8.82325 44.9916H36.1761C41.0234 44.9916 44.9891 41.0259 44.9891 36.1785V8.8257C44.9891 3.97843 41.0234 0.0112305 36.1761 0.0112305H8.82325ZM11.0402 7.43389C13.3644 7.43389 14.796 8.95966 14.8402 10.9653C14.8402 12.9266 13.3643 14.4952 10.9953 14.4952H10.9517C8.67174 14.4952 7.19812 12.9267 7.19812 10.9653C7.19812 8.95971 8.71638 7.43389 11.0402 7.43389ZM31.0688 16.8078C35.5386 16.8078 38.8894 19.7293 38.8894 26.0075V37.7277H32.0965V26.7933C32.0965 24.0456 31.1134 22.1709 28.6551 22.1709C26.7784 22.1709 25.6598 23.4345 25.1686 24.655C24.9892 25.0917 24.9451 25.7016 24.9451 26.3125V37.7277H18.1522C18.1522 37.7277 18.2414 19.2051 18.1522 17.2872H24.9465V20.1818C25.8492 18.789 27.4639 16.8078 31.0688 16.8078ZM7.5988 17.2887H14.3917V37.7278H7.5988V17.2887Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_290_34">
+                            <rect width="45" height="45" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>                            
+                    </a>
+                    <a class="text-decoration-none" href="mailto:marchelinobojoh@gmail.com">
+                        <svg width="55" height="55" viewBox="0 5 50 50" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentcolor" d="M39.0205 11.2708L36.3538 13.3542L24.9997 21.7917L13.6455 13.2708L10.9788 11.1875C10.3506 10.6678 9.58372 10.3438 8.77317 10.2557C7.96263 10.1676 7.14405 10.3193 6.41884 10.6918C5.69363 11.0644 5.09367 11.6416 4.69328 12.3518C4.29289 13.0621 4.10967 13.8741 4.16632 14.6875V38.8333C4.16632 39.5848 4.46483 40.3054 4.99619 40.8368C5.52754 41.3682 6.24821 41.6667 6.99965 41.6667H13.6455V25.5833L24.9997 34.1042L36.3538 25.5833V41.6667H42.9997C43.7511 41.6667 44.4718 41.3682 45.0031 40.8368C45.5345 40.3054 45.833 39.5848 45.833 38.8333V14.6875C45.8721 13.8812 45.6761 13.0808 45.2689 12.3838C44.8617 11.6867 44.2608 11.123 43.5392 10.7611C42.8176 10.3992 42.0063 10.2547 41.2042 10.3452C40.402 10.4357 39.6433 10.7573 39.0205 11.2708V11.2708Z" fill="black"/>
+                            </svg>                                                       
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End About Me -->
+
+
+    
+    <!-- Get In Touch -->
+    <div class="get-touch" id="get-touch">
+        <div class="rocket">
+            <img class ="rocket-effect" src="images/rocket.gif">
+        </div>
+        <div class="cloud-1">
+            <img class ="cloud-effect1" src="images/Vectorcloud-1.png">
+        </div>
+        <div class="cloud-2">
+            <img class ="cloud-effect2" src="images/Vectorcloud-2.png">
+        </div>
+        <div class="cloud-3">
+            <img class ="cloud-effect2" src="images/Vectorcloud-3.png">
+        </div>
+        <div class="cloud-4">
+            <img src="images/Rectangle.png">
+        </div>     
+        <div class="container-section">
+            <div class="content">
+                <h1>Get In Touch</h1>
+                <br>
+                <p>Let's a collaboration with me</p>
+                <br>
+                <center><a href="mailto:marchelinobojoh@gmail.com">Let's Go</a></center>
+            </div>
+                
+        </div>
+    </div>
+    <!-- End Get In Touch -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <p><i class="box box-cr"></i>©Copyright 2022 Marchel</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- JavaScript -->
+    <script src="js/navigation.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/type.js"></script>
+    <script src="js/think.js"></script>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script src="js/tilt.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

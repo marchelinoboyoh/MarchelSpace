@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif, bold;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #25164D;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION BAR */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.6s;
+}
+header .logo{
+    margin-top: 20px;
+    position: relative;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    transition: 0.6s;
+    left: -30px;
+    height: 50px;
+    align-items: center;  
+}
+header img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: relative;
+    left: 90px;
+}
+header .icon-nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 48%;
+}
+header .icon-nav a{
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+}
+header .icon-nav svg{
+    color: #ffff;
+}
+header.sticky{
+    background-color: #25164D;
+}
+
+
+/* Link Menu */
+.link-nav{
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    position: fixed;
+    background: #E8E8E2;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+}
+.link-nav.open{
+    clip-path: circle(1800px at 90% -10%);
+    -webkit-clip-path: circle(1800px at 90% -10%);
+    pointer-events: all;
+}
+.link-nav li{
+    opacity: 0;
+}
+.link-nav li a{
+    font-size: 4em;
+    color: #2f2f2f;
+    text-decoration: none;
+}
+.link-nav li:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+}
+.link-nav li:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+}
+.link-nav li:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+}
+li.fade {
+    opacity: 1;
+}
+
+
+/* Menu Burger */
+.menu-btn {
+    cursor: pointer;
+    right: 90px;
+    margin-top: 32px;
+    margin-bottom: -10%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger {
+    width: 50px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: #ffff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+   
+}
+.menu-btn__burger::after {
+    transform: translateY(16px);
+}
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(-35px, 35px);
+    background: #2f2f2f;
+}
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(-35px, -35px);
+    background: #2f2f2f;
+}
+/* END NAVIGATION */
+
+
+/* HERO */
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/stars.png);
+    background-position: center;
+}
+.hero .container-section{
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.hero .container-section .content{
+    width: 50%;
+}
+.hero .container-section .content h1{
+    font-size: 4em;
+    color:#ffff;
+    text-align: justify;
+    font-weight: 700;  
+}
+
+
+/* Type Text */
+.typed-text{
+    color: #ffff;
+    margin-left: 0.1em;
+}
+.cursor{
+    display: inline-block;
+    width: 3px;
+    background-color: #fff;
+    margin-left: 0.1em;
+    animation: blink 1s infinite;
+}
+.cursor.typing{
+    animation: none;
+}
+@keyframes blink{
+    0%{
+        background-color: #fff;
+    }
+    50%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: #fff;
+    }
+}
+
+
+/* Moon */
+.hero .container-section .moon img{
+    width: 600px;
+}
+.hero .container-section .moon{
+    animation: spin1 1000s linear infinite;
+    
+}
+@keyframes spin1{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(1160deg);
+    }
+}
+
+
+/* Meteor */
+.hero .container-section .meteor-cont{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 100%;
+    width: 10%;
+    transform: translate(-50%, -20%);
+    transform: rotate(65deg);
+    display: flex;
+    justify-content: center;
+}
+.hero .container-section .meteor-cont #meteor{
+    height: 10vh;
+    width: 10px;
+    background: linear-gradient(to top, #fff 0%, transparent 80%);
+    backdrop-filter: blur(60%);
+    border-radius: 10px 10px;
+    opacity: .7;
+    z-index: 600;
+    position: relative;
+}
+.hero .container-section .meteor-cont #meteor::after{
+    content: '';
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    opacity: 1;
+    bottom: 0%;
+    right: 0%;
+    box-shadow: 10px 10px 20px #fff, -10px -10px 20px #fff, -15px -15px 50px #fff;
+    z-index: 600;
+}
+.hero .container-section .meteor-ani-1{
+    position: relative;
+    top: -60%;
+    left: 60%;
+    height: 100vh;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    animation: meteor 4s linear 0s infinite normal;
+}
+.hero .container-section .meteor-ani-2{
+    position: relative;
+    top: -200%;
+    left: -300%;
+    height: 100vh;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    animation: meteor 4s linear 0s infinite normal;
+}
+@keyframes meteor {
+    0%
+    {
+        transform: translateY(0%);
+    }
+    100%
+    {
+        transform: translateY(1000%);
+    }
+}
+
+
+/* END HERO */
+
+
+/* PROJECT */
+/* Project 1 */
+.project-1{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/stars.png);
+    background-position: center;
+}
+.project-1 .container-section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-1 .container-section .content-text h1{
+    font-size: 4em;
+    color: #F65354;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-weight: 700;
+}
+.project-1 .container-section .content-text p{
+    max-width: 600px;
+    text-align: left;
+    color: #E8E8E2;
+    font-size: 1.2em;
+}
+.project-1 .container-section .content-text h3{
+    max-width: 600px;
+    text-align: left;
+    color: #ffff;
+    font-size: 1.2em;
+}
+.project-1 a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 60px;
+    color: #2f2f2f;
+    background-color: #E8E8E2;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    overflow: hidden;
+    transition: 0.1s;
+}
+.project-1 a:hover{
+    color: #F65354;
+    background: #E8E8E2;
+    box-shadow: 0 0 0px #E8E8E2, 0 0 0px #E8E8E2, 0 0 20px
+    #E8E8E2;
+    transition-delay: 0.1s;
+}
+.project-1 .container-section img{
+    width: 800px;
+}
+/* End Project 1 */
+/* END PROJECT */
+
+
+/* ABOUT ME */
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/stars.png);
+    background-position: center;
+}
+.about .container-section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Astronot */
+.about .container-section img{
+    width: 400px;
+    margin-left: -10%;
+}
+.about .container-section .mean p{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #2f2f2f;
+    position: relative;
+    margin-bottom: -20%;
+    margin-left: 10%;
+    text-align: justify;
+}
+.about .container-section .mean img{
+    width: 200px;
+    margin-left: 0%;
+    margin-bottom: 300%;
+}
+.astronot-effect1{
+    animation: leftBounce 4s ease-in-out infinite;
+}
+@keyframes leftBounce{
+    0%, 100%{
+    transform: translateY(0);
+    }
+    50%{
+    transform: translateY(15px);
+    }
+}
+
+/* Type Text */
+.thinktext{
+    color: #2f2f2f;
+    margin-left: 0.1em;
+}
+.thinkcursor{
+    display: inline-block;
+    width: 3px;
+    background-color: #2f2f2f;
+    margin-left: 0.1em;
+    animation: blink2 1s infinite;
+}
+.thinkcursor.typing{
+    animation: none;
+}
+@keyframes blink2{
+    0%{
+        background-color: #2f2f2f;
+    }
+    50%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: #2f2f2f;
+    }
+}
+
+.about .container-section .text{
+    margin-left: 8.5%;
+    position: relative;
+}
+.about .container-section .text h1{
+    font-size: 4em;
+    color: #ffff;
+    letter-spacing: 1px;
+    text-align: left;
+    font-weight: 700;
+}
+.about .container-section .text p{
+    font-size: 1.2em;
+    color: #E8E8E2;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+/* Reach Me */
+.about .container-section .text h3{
+    font-size: 1.2em;
+    color: #ffff;
+}
+.about .container-section .text .reach-icon{
+    position: relative;
+    display: flex;
+}
+.about .container-section .text .reach-icon a{
+    position: relative;
+    text-decoration: none;
+    margin: 10px 0px;
+    margin-right: 5%;
+}
+.about .container-section .text .reach-icon svg{
+    color: #ffff;
+}
+/* END ABOUT ME */
+
+
+
+/* GET IN TOUCH */
+.get-touch{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/stars.png);
+    background-position: center;
+}
+.get-touch img{
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+.get-touch .rocket img{
+    width: 200px;
+    bottom: 30%;
+    left: 44%;
+}
+.get-touch .cloud-4 img{
+    width: 100%;
+    height: 50px;
+    bottom: 0%;
+    right: 0%;
+    left: 0;
+    position: absolute;
+}
+.get-touch .container-section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get-touch .container-section .content{
+    position: relative;
+    margin-bottom: 35%;
+}
+.get-touch .container-section .content h1{
+    font-size: 4em;
+    color: #ffff;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 700;
+}
+.get-touch .container-section .content p{
+    font-size: 1.2em;
+    color: #E8E8E2;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.get-touch .container-section .content a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 60px;
+    color: #2f2f2f;
+    background-color: #E8E8E2;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    overflow: hidden;
+    transition: 0.1s;
+}
+.get-touch .container-section .content a:hover{
+    color: #2f2f2f;
+    background: #E8E8E2;
+    box-shadow: 0 0 0px #E8E8E2, 0 0 0px #E8E8E2, 0 0 20px
+    #E8E8E2;
+    transition-delay: 0.1s;
+}
+.cloud-effect1{
+    animation: leftBounce 5s ease-in-out infinite;
+}
+.cloud-effect2{
+    animation: leftBounce 4s ease-in-out infinite;
+}
+.cloud-effect3{
+    animation: leftBounce 6s ease-in-out infinite;
+}
+.rocket-effect{
+    animation: leftBounce 5s ease-in-out infinite;
+}
+@keyframes leftBounce{
+    0%, 100%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(15px);
+    }
+}
+/* END GET IN TOUCH */
+
+
+
+/* FOOTER */
+footer{
+    padding: 10px 100px;
+    background: #ffff;
+}
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .info p{
+    color: #2f2f2f;
+    font-size: 0.9em;
+    font-weight: 500;
+    align-items: center;
+}
+/* END FOOTER */

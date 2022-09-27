@@ -1,0 +1,367 @@
+@media screen and (max-width: 1200px){
+
+    /* Navbar */
+    header .logo{
+        margin-top: 20px;
+        left: -10px;
+        height: 50px;
+    }
+    header .icon-nav{
+        margin-left: 30%;
+    }
+
+    /* Hero */
+    .hero{
+        min-height: 100vh;
+    }
+    .hero .container-section{
+        min-height: 100vh;   
+    }
+    .hero .container-section .moon img{
+        width: 500px;
+    }
+    .hero .container-section .content h1{
+        font-size: 3em;
+        font-weight: 700;  
+    }
+
+    /* Project */
+    .project-1 .container-section .content-text h1{
+        font-size: 3em;
+    }
+    .project-1 .container-section img{
+        width: 600px;
+    }
+
+    /* About */
+    .about .container-section img{
+        width: 300px;
+    }
+    .about .container-section .mean img{
+        width: 200px;
+        margin-left: 0%;
+        margin-bottom: 250%;
+    }
+    .about .container-section .text h1{
+        font-size: 3em;
+    }
+
+    /* Get Touch */
+    .get-touch .rocket img{
+        width: 200px;
+        bottom: 21%;
+        left: 41.5%;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px){
+    /* Navbar */
+    header .logo{
+        margin-top: 20px;
+        left: -10px;
+        height: 50px;
+    }
+    header img{
+        left: 60px;
+    }
+    header .icon-nav{
+        margin-left: 25%;
+    }
+    .menu-btn {
+        right: 50px;
+        margin-top: 32px;
+        margin-bottom: -10%;
+    }
+
+     /* Get Touch */
+     .get-touch .rocket img{
+        width: 200px;
+        bottom: 21%;
+        left: 40.5%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 768px){
+    /* Navbar */
+    header .logo{
+        margin-top: 20px;
+        left: -10px;
+        height: 50px;
+    }
+    header img{
+        left: 20px;
+    }
+    header .icon-nav{
+        margin-left: 25%;
+    }
+    .menu-btn {
+        right: 20px;
+        margin-top: 32px;
+        margin-bottom: -10%;
+    }
+
+    /* Hero */
+    .hero{
+        min-height: 100vh;
+    }
+    .hero .container-section{
+        min-height: 100vh;   
+    }
+    .hero .container-section .moon img{
+        width: 300px;
+    }
+    .hero .container-section .content h1{
+        font-size: 2em;
+        font-weight: 700;  
+    }
+
+    /* Project */
+    .project-1 .container-section .content-text h1{
+        font-size: 2em;
+    }
+    .project-1 .container-section img{
+        width: 400px;
+    }
+    .project-1 .container-section .content-text p{
+        font-size: 0.8em;
+    }
+    .project-1 .container-section .content-text h3{
+        font-size: 0.8em;
+    }
+    .project-1 a{
+        padding: 10px 30px;
+        font-size: 0.8em;
+    }
+
+    /* About */
+    .about .container-section img{
+        width: 220px;
+    }
+    .about .container-section .mean img{
+        width: 120px;
+        margin-left: -10%;
+        margin-bottom: 250%;
+    }
+    .about .container-section .text h1{
+        font-size: 2em;
+    }
+    .about .container-section .text p{
+        font-size: 0.8em;
+    }
+    .about .container-section .mean p{
+        font-size: 0.8em; 
+        margin-bottom: -20%;
+        margin-left: -8%;
+    }
+    .about .container-section .text h3{
+        font-size: 0.8em;
+    }
+
+
+    /* Get Touch */
+    .get-touch .rocket img{
+        width: 200px;
+        bottom: 15%;
+        left: 37%;
+    }
+    .get-touch .cloud-4 img{
+        width: 100%;
+        height: 20px;
+        bottom: -1%;
+    }
+    .get-touch .container-section .content h1{
+        font-size: 2em;
+    }
+    .get-touch .container-section .content p{
+        font-size: 0.8em;
+    }
+    .get-touch .container-section .content a{
+        padding: 10px 30px;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 576px){
+    /* Navbar */
+    header .logo{
+        margin-top: 20px;
+        left: 10px;
+        height: 50px;
+    }
+    header img{
+        left: 10px;
+    }
+    header .icon-nav{
+        margin-left: 10%;
+    }
+    .menu-btn {
+        right: 10px;
+        margin-top: 32px;
+        margin-bottom: -10%;
+    }
+
+    /* Hero */
+    .hero .container-section .moon img{
+        width: 200px;
+    }
+    .hero .container-section .content h1{
+        font-size: 1.5em; 
+    }
+
+    /* Project */
+    .project-1 .container-section .content-text h1{
+        font-size: 1.5em;
+    }
+    .project-1 .container-section img{
+        width: 300px;
+    }
+    .project-1 a{
+        padding: 5px 10px;
+        font-size: 0.8em;
+        position: relative;
+        margin-bottom: 20%;
+    }
+
+    /* About */
+    .about .container-section img{
+        width: 170px;
+    }
+    .about .container-section .mean img{
+        width: 120px;
+        margin-left: 10%;
+        margin-bottom: 250%;
+    }
+    .about .container-section .text h1{
+        font-size: 1.5em;
+    }
+    .about .container-section .text p{
+        font-size: 0.8em;
+    }
+    .about .container-section .mean p{
+        font-size: 0.7em; 
+        margin-bottom: -20%;
+        margin-left: 11%;
+    }
+    .about .container-section .text h3{
+        font-size: 0.8em;
+    }
+    .about .container-section .text .reach-icon a{
+        margin: 0px 0px;
+        margin-right: 0%;
+    }
+
+    /* Get Touch */
+    .get-touch .rocket img{
+        width: 150px;
+        bottom: 15%;
+        left: 37%;
+    }
+    .get-touch .container-section .content h1{
+        font-size: 2em;
+    }
+    .get-touch .container-section .content a{
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 390px){
+    /* Navbar */
+    header .logo{
+        left: 20px;
+    }
+    header img{
+        left: 10px;
+    }
+    header .icon-nav{
+        margin-left: 0%;
+    }
+    header .icon-nav a{
+        margin: 0 10px;
+        opacity: 0;
+    }
+    .menu-btn {
+        right: 20px;
+        margin-top: 32px;
+        margin-bottom: -10%;
+    }
+
+    /* Hero */
+    .hero{
+        position: relative;
+        width: 100%;
+        min-height: 110vh;
+        padding: 0px 10px;
+    }
+    .hero .moon img{
+        width: 100px;
+    }
+    .hero .container-section .content h1{
+        font-size: 1.5em; 
+    }
+
+    /* Project */
+    .project-1 .container-section .content-text h1{
+        font-size: 1.5em;
+        margin-top: 20%;
+    }
+    .project-1 .container-section img{
+        width: 200px;
+    }
+    .project-1 a{
+        opacity: 0;
+    }
+
+
+    /* About */
+    .about .container-section img{
+        width: 120px;
+        margin-right: 50%;
+        margin-top: -50%;
+    }
+    .about .container-section .mean img{
+        width: 100px;
+        margin-left: 80%;
+    }
+    .about .container-section .mean p{
+        font-size: 0.7em;
+        position: absolute;
+        top: 27%;
+        left: -60%;
+    }
+    .about .container-section .text h1{
+        font-size: 1.5em;
+        position: relative;
+        margin-left: -40%;
+        padding-right: 60%;
+    }
+    .about .container-section .text p{
+        font-size: 0.4em;
+        position: relative;
+        margin-left: -40%;
+        padding-right: 60%;
+    }
+    .about .container-section .text h3{
+        font-size: 0.8em;
+        margin-left: -40%;
+        position: relative;
+    }
+    .about .container-section .text .reach-icon a{
+        margin: 0px 0px;
+        margin-right: -60%;
+        margin-left: 5%;
+    }
+   
+    /* Get Touch */
+    .get-touch .rocket img{
+        width: 150px;
+        bottom: 10%;
+        left: 30%;
+    }
+    
+}

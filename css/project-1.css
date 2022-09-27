@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif, bold;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #25164D;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION BAR */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.6s;
+}
+header .logo{
+    margin-top: 20px;
+    position: relative;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    transition: 0.6s;
+    left: -10px;
+    height: 50px;
+    align-items: center;  
+}
+header img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: relative;
+    left: 90px;
+}
+header .icon-nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 48%;
+}
+header .icon-nav a{
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+}
+header .icon-nav svg{
+    color: #ffff;
+}
+header.sticky{
+    background-color: #25164D;
+}
+
+
+/* Link Menu */
+.link-nav{
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    position: fixed;
+    background: #E8E8E2;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+}
+.link-nav.open{
+    clip-path: circle(1800px at 90% -10%);
+    -webkit-clip-path: circle(1800px at 90% -10%);
+    pointer-events: all;
+}
+.link-nav li{
+    opacity: 0;
+}
+.link-nav li a{
+    font-size: 4em;
+    color: #2f2f2f;
+    text-decoration: none;
+}
+.link-nav li:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+}
+.link-nav li:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+}
+.link-nav li:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+}
+li.fade {
+    opacity: 1;
+}
+
+
+/* Menu Burger */
+.menu-btn {
+    cursor: pointer;
+    right: 90px;
+    margin-top: 32px;
+    margin-bottom: -10%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger {
+    width: 50px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: #ffff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+   
+}
+.menu-btn__burger::after {
+    transform: translateY(16px);
+}
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(-35px, 35px);
+    background: #2f2f2f;
+}
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(-35px, -35px);
+    background: #2f2f2f;
+}
+/* END NAVIGATION */
+
+
+/* Project 1 */
+.project-1{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/stars.png);
+    background-position: center;
+}
+.project-1 .container-section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-1 .container-section .content-text h1{
+    font-size: 4em;
+    color: #F65354;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-weight: 700;
+}
+.project-1 .container-section .content-text p{
+    max-width: 600px;
+    text-align: left;
+    color: #E8E8E2;
+    font-size: 1.2em;
+}
+.project-1 .container-section .content-text h3{
+    max-width: 600px;
+    text-align: left;
+    color: #ffff;
+    font-size: 1.2em;
+}
+/* End Project 1 */
